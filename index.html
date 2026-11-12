@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171411" />
+    <meta
+      name="description"
+      content="ع الشواية — مشويات وكريب وسندويتشات بلدي وسوري وإضافات بطعم يستاهل التجربة."
+    />
+    <title>ع الشواية | نكهة على أصولها</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ========== الشريط العلوي ========== -->
+    <div class="announcement">
+      <span class="spark">✦</span> نكهة على أصولها — واللمة ليها طعم تاني
+      <span class="spark">✦</span>
+    </div>
+
+    <!-- ========== الهيدر ========== -->
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="ع الشواية - الرئيسية">
+        <!-- علامة شعله-->
+        <span class="brand-mark" aria-hidden="true">🔥</span>
+        </span>
+        <span class="brand-copy">
+          <strong>ع الشواية</strong><small>اكل الملوك</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="فتح القائمة"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
+        <a class="nav-link active" href="#home">الرئيسية</a>
+        <a class="nav-link" href="#menu">قائمة الطعام</a>
+        <a class="nav-link" href="#about">حكايتنا</a>
+        <a class="nav-link" href="#services">خدماتنا</a>
+        <a class="nav-link" href="#contact">تواصل معنا</a>
+      </nav>
+
+      <button class="cart-button" id="openCart" aria-label="عرض سلة الطلبات">
+        <span class="cart-icon">🛒</span><span>سلة الطلبات</span>
+        <b id="cartCount">0</b>
+      </button>
+    </header>
+
+    <main>
+      <!-- ========== الهيرو ========== -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="eyebrow"><span></span> نكهة تستاهل اللمة</div>
+          <h1>...مطعم عالشوايه<br /><em>كل اللي جرب معرفش يبطل</em></h1>
+          <p>
+            من أول ريحة الشوي لآخر لقمة، بنقدملك أكل معمول بحب، ونكهة تدفيك
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu"
+              >اكتشف المنيو <span>←</span></a
+            >
+            <a class="btn btn-ghost" href="#about">اعرف حكايتنا</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-avatars">
+              <span>🍗</span><span>🍕</span><span>🥙</span>
+            </div>
+            <div>
+              <strong>كل اللي بتحبه في مكان واحد</strong>
+              <small>مشويات • كريب • ساندويتشات بلدي وسوري</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="أطباق شهية من ع الشواية">
+          <div class="hero-glow"></div>
+
+          <!-- مكان اللوجو: -->
+          <div class="hero-image-frame">
+            <img
+              src="logo.png" alt="لوجو ع الشواية" width="300" height="300"
+        />
+            <div class="fallback-food">🔥<span>ع الشواية</span></div>
+          </div>
+
+          <!-- الكلام المتحرك -->
+          <div class="floating-note drift note-top" data-drift="-0.1,0.08,-0.05,0.25">
+            <span>🔥</span>
+            <div><strong>طعم على الفحم</strong><small>نكهة أصيلة</small></div>
+          </div>
+          <div class="floating-note drift note-bottom" data-drift="-0.08,0.1,-0.25,0.05">
+            <span>♥</span>
+            <div>
+              <strong>متعمل بحب</strong><small>من أول مكون لآخر لقمة</small>
+            </div>
+          </div>
+
+          <div class="hero-stamp">فررريش<br/>دايمًا</div>
+        </div>
+
+        <a href="#menu" class="scroll-cue"><span></span> انزل واكتشف</a>
+      </section>
+
+      <!-- ========== المميزات ========== -->
+      <section class="trust-strip" aria-label="مميزات المطعم">
+        <div>
+          <span class="trust-icon">✦</span><strong>مكونات مختارة</strong>
+          <small>اهتمام بالتفاصيل</small>
+        </div>
+        <div>
+          <span class="trust-icon">♨</span><strong>طعم طازة</strong>
+          <small>يتحضّر وقت الطلب</small>
+        </div>
+        <div>
+          <span class="trust-icon">♡</span><strong>لمة حلوة</strong>
+          <small>أكل يجمع الأحباب</small>
+        </div>
+        <div>
+          <span class="trust-icon">⌁</span><strong>اختيارات متنوعة</strong>
+          <small>كل واحد يلاقي اللي يحبه</small>
+        </div>
+      </section>
+
+      <!-- ========== المنيو ========== -->
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">اختار اللي يمزجك</span>
+            <h2>منيو <em>يفتح النفس</em></h2>
+          </div>
+          <p>من الشواية لاول قطمة، حضّر نفسك لوجبتك المفضلة.</p>
+        </div>
+
+        <div class="menu-tools">
+          <div class="filters" role="group" aria-label="تصفية أصناف الطعام">
+            <button class="filter-chip active" data-filter="all">كل الأصناف</button>
+            <button class="filter-chip" data-filter="grill">المشويات</button>
+            <button class="filter-chip" data-filter="crepe">الكريبات</button>
+            <button class="filter-chip" data-filter="baladi">ساندوتشات بلدي</button>
+            <button class="filter-chip" data-filter="syrian">ساندوتشات سوري</button>
+            <button class="filter-chip" data-filter="extras">الإضافات والصوصات</button>
+          </div>
+          <label class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="menuSearch"
+              placeholder="بتدور على إيه؟"
+              aria-label="ابحث في قائمة الطعام"
+            />
+          </label>
+        </div>
+
+        
+        <div class="menu-grid" id="menuGrid">
+          <!-- ===== المشويات ===== -->
+          <article class="food-card" data-category="grill" data-name="وجبة ربع فرخة شواية">
+            <div class="food-image">
+              <img src="a.png" alt="وجبة ربع فرخة شواية" loading="lazy" />
+              <span class="food-tag">الأكثر طلبًا🔥</span>
+              <button class="quick-add" data-add="وجبة ربع فرخة شواية" data-price="85" aria-label="أضف وجبة ربع فرخة شواية للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة ربع فرخة شواية</h3><p>وجبة مشوية بطعم على أصوله</p></div>
+              <strong class="price">85 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة نص فرخة شواية">
+            <div class="food-image">
+              <img src="نص فرخه١٧٠.jpg" alt="وجبة نص فرخة شواية" loading="lazy" />
+              <button class="quick-add" data-add="وجبة نص فرخة شواية" data-price="170" aria-label="أضف وجبة نص فرخة شواية للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة نص فرخة شواية</h3><p>فرخة شواية مقسومة نصفين</p></div>
+              <strong class="price">170 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="فرخة شواية">
+            <div class="food-image">
+              <img src="فرخه شوايه٣٤٠.jpg" alt="فرخة شواية" loading="lazy" />
+              <button class="quick-add" data-add="فرخة شواية" data-price="340" aria-label="أضف فرخة شواية للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>فرخة شواية</h3><p>فرخة شواية كاملة</p></div>
+              <strong class="price">340 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة ربع فرخة فحم">
+            <div class="food-image">
+              <img src="ربع فحم٨٥.jpg" alt="وجبة ربع فرخة فحم" loading="lazy" />
+              <button class="quick-add" data-add="وجبة ربع فرخة فحم" data-price="85" aria-label="أضف وجبة ربع فرخة فحم للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة ربع فرخة فحم</h3><p>طعم الفحم المميز</p></div>
+              <strong class="price">85 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة نص فرخة فحم">
+            <div class="food-image">
+              <img src="b74448fe1e5e91b634f76c7dc723408d.jpg" alt="وجبة نص فرخة فحم" loading="lazy" />
+              <button class="quick-add" data-add="وجبة نص فرخة فحم" data-price="170" aria-label="أضف وجبة نص فرخة فحم للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة نص فرخة فحم</h3><p>نصف فرخة على الفحم</p></div>
+              <strong class="price">170 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="فرخة فحم">
+            <div class="food-image">
+              <img src="12ccaa995e7785777b499a1333951117.jpg" alt="فرخة فحم" loading="lazy" />
+              <button class="quick-add" data-add="فرخة فحم" data-price="340" aria-label="أضف فرخة فحم للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>فرخة فحم</h3><p>فرخة كاملة على الفحم</p></div>
+              <strong class="price">340 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة ربع فرخة شيش">
+            <div class="food-image">
+              <img src="8a8f01c737adb2b0a4662a7b44cfead9.jpg" alt="وجبة ربع فرخة شيش" loading="lazy" />
+              <button class="quick-add" data-add="وجبة ربع فرخة شيش" data-price="85" aria-label="أضف وجبة ربع فرخة شيش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة ربع فرخة شيش</h3><p>شيش فراخ مشوي</p></div>
+              <strong class="price">85 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة نص فرخة شيش">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (1).jpg" alt="وجبة نص فرخة شيش" loading="lazy" />
+              <button class="quick-add" data-add="وجبة نص فرخة شيش" data-price="170" aria-label="أضف وجبة نص فرخة شيش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة نص فرخة شيش</h3><p>نصف فرخة شيش</p></div>
+              <strong class="price">170 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="فرخة شيش">
+            <div class="food-image">
+              <img src="4f467861e0c515281fc8779e43b2a547.jpg" alt="فرخة شيش" loading="lazy" />
+              <button class="quick-add" data-add="فرخة شيش" data-price="340" aria-label="أضف فرخة شيش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>فرخة شيش</h3><p>فرخة شيش كاملة</p></div>
+              <strong class="price">340 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="وجبة كفتة ربع كيلو">
+            <div class="food-image">
+              <img src="كفته١٥٥.jpg" alt="وجبة كفتة ربع كيلو" loading="lazy" />
+              <button class="quick-add" data-add="وجبة كفتة ربع كيلو" data-price="155" aria-label="أضف وجبة كفتة ربع كيلو للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>وجبة كفتة ربع كيلو</h3><p>كفتة مشوية على أصولها</p></div>
+              <strong class="price">155 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="نص كيلو كفتة">
+            <div class="food-image">
+              <img src="كفته٢٨٠.jpg" alt="نص كيلو كفتة" loading="lazy" />
+              <button class="quick-add" data-add="نص كيلو كفتة" data-price="280" aria-label="أضف نص كيلو كفتة للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>نص كيلو كفتة</h3><p>نصف كيلو كفتة</p></div>
+              <strong class="price">280 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="واحد كيلو كفتة">
+            <div class="food-image">
+              <img src="كفته٥٦٠.jpg" alt="واحد كيلو كفتة" loading="lazy" />
+              <button class="quick-add" data-add="واحد كيلو كفتة" data-price="560" aria-label="أضف واحد كيلو كفتة للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>واحد كيلو كفتة</h3><p>كيلو كفتة مشوية</p></div>
+              <strong class="price">560 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="grill" data-name="ربع كيلو كفتة">
+            <div class="food-image">
+              <img src="كفته١٤٠.jpg" alt="ربع كيلو كفتة" loading="lazy" />
+              <button class="quick-add" data-add="ربع كيلو كفتة" data-price="140" aria-label="أضف ربع كيلو كفتة للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ربع كيلو كفتة</h3><p>ربع كيلو كفتة</p></div>
+              <strong class="price">140 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <!-- ===== الكريبات ===== -->
+          <article class="food-card" data-category="crepe" data-name="كريب كرسبي">
+            <div class="food-image">
+              <img src="488d0e7abe18565bd7e893ddcc97f487.jpg" alt="كريب كرسبي" loading="lazy" />
+              <button class="quick-add" data-add="كريب كرسبي" data-price="75" aria-label="أضف كريب كرسبي للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب كرسبي</h3><p>كريب مقرمش بحشوة كرسبي</p></div>
+              <strong class="price">75 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب زنجر">
+            <div class="food-image">
+              <img src="8efb24da886f4757452a317848125908.jpg" alt="كريب زنجر" loading="lazy" />
+              <button class="quick-add" data-add="كريب زنجر" data-price="75" aria-label="أضف كريب زنجر للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب زنجر</h3><p>كريب زنجر بطعم غني</p></div>
+              <strong class="price">75 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب مكس تشيكن">
+            <div class="food-image">
+              <img src="1aa4968e72bdb0b78e07d306a658e8a1.jpg" alt="كريب مكس تشيكن" loading="lazy" />
+              <span class="food-tag">مميز</span>
+              <button class="quick-add" data-add="كريب مكس تشيكن" data-price="100" aria-label="أضف كريب مكس تشيكن للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب مكس تشيكن</h3><p>مكس تشيكن في كريب واحد</p></div>
+              <strong class="price">100 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب شاورما">
+            <div class="food-image">
+              <img src="5c99453d900ac1018931003aa3de1fa8.jpg" alt="كريب شاورما" loading="lazy" />
+              <button class="quick-add" data-add="كريب شاورما" data-price="75" aria-label="أضف كريب شاورما للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب شاورما</h3><p>شاورما داخل كريب طازة</p></div>
+              <strong class="price">75 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب شيش">
+            <div class="food-image">
+              <img src="7cd0af9dcf886f796b359a8dcbe2f26c.jpg" alt="كريب شيش" loading="lazy" />
+              <button class="quick-add" data-add="كريب شيش" data-price="75" aria-label="أضف كريب شيش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب شيش</h3><p>حشوة شيش مشوية</p></div>
+              <strong class="price">75 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب كفتة">
+            <div class="food-image">
+              <img src="51dedfc357841607c97de773c127f94c.jpg" alt="كريب كفتة" loading="lazy" />
+              <button class="quick-add" data-add="كريب كفتة" data-price="85" aria-label="أضف كريب كفتة للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب كفتة</h3><p>كفتة متبلة في كريب</p></div>
+              <strong class="price">85 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب لحم مفرومة">
+            <div class="food-image">
+              <img src="fa2db048e6f83d6dff7868bc9b2c8a4a.jpg" alt="كريب لحم مفرومة" loading="lazy" />
+              <button class="quick-add" data-add="كريب لحم مفرومة" data-price="75" aria-label="أضف كريب لحم مفرومة للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب لحم مفرومة</h3><p>لحم مفروم متبل</p></div>
+              <strong class="price">75 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="crepe" data-name="كريب بطاطس">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (2).jpg" alt="كريب بطاطس" loading="lazy" />
+              <button class="quick-add" data-add="كريب بطاطس" data-price="55" aria-label="أضف كريب بطاطس للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>كريب بطاطس</h3><p>كريب بطاطس لذيذ</p></div>
+              <strong class="price">55 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <!-- ===== ساندوتشات بلدي ===== -->
+          <article class="food-card" data-category="baladi" data-name="حواوشي">
+            <div class="food-image">
+              <img src="e8636cb4593d9a402c19abe0130869dd.jpg" alt="حواوشي" loading="lazy" />
+              <button class="quick-add" data-add="حواوشي" data-price="35" aria-label="أضف حواوشي للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>حواوشي</h3><p>حواوشي بلدي بطعم أصيل</p></div>
+              <strong class="price">35 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="baladi" data-name="حواوشي موزاريلا">
+            <div class="food-image">
+              <img src="54678bee05d3b74e9bb64bb78f8328b4.jpg" alt="حواوشي موزاريلا" loading="lazy" />
+              <button class="quick-add" data-add="حواوشي موزاريلا" data-price="45" aria-label="أضف حواوشي موزاريلا للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>حواوشي موزاريلا</h3><p>حواوشي مع جبنة موزاريلا</p></div>
+              <strong class="price">45 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="baladi" data-name="ساندوتش كفتة بلدي">
+            <div class="food-image">
+              <img src="3a829b519f2cb26766a6c573ff983440.jpg" alt="ساندوتش كفتة بلدي" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش كفتة بلدي" data-price="40" aria-label="أضف ساندوتش كفتة بلدي للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش كفتة بلدي</h3><p>كفتة بلدي في عيش طازة</p></div>
+              <strong class="price">40 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <!-- ===== ساندوتشات سوري ===== -->
+          <article class="food-card" data-category="syrian" data-name="ساندوتش كرسبي">
+            <div class="food-image">
+              <img src="bb7ae6de4c73330b4393fda4c4ac53a1.jpg" alt="ساندوتش كرسبي" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش كرسبي" data-price="60" aria-label="أضف ساندوتش كرسبي للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش كرسبي</h3><p>كرسبي مقرمش</p></div>
+              <strong class="price">60 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="syrian" data-name="ساندوتش زنجر">
+            <div class="food-image">
+              <img src="1b56143e0072f627d7a091375c331134.jpg" alt="ساندوتش زنجر" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش زنجر" data-price="60" aria-label="أضف ساندوتش زنجر للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش زنجر</h3><p>زنجر بتتبيلة مميزة</p></div>
+              <strong class="price">60 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="syrian" data-name="ساندوتش شاورما جريل">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (3).jpg" alt="ساندوتش شاورما جريل" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش شاورما جريل" data-price="60" aria-label="أضف ساندوتش شاورما جريل للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش شاورما جريل</h3><p>شاورما جريل بطعم غني</p></div>
+              <strong class="price">60 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="syrian" data-name="ساندوتش فاهيتا">
+            <div class="food-image">
+              <img src="2efe1953176454c95ba4d32058d267be.jpg" alt="ساندوتش فاهيتا" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش فاهيتا" data-price="60" aria-label="أضف ساندوتش فاهيتا للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش فاهيتا</h3><p>فاهيتا متبلة</p></div>
+              <strong class="price">60 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="syrian" data-name="ساندوتش شيش">
+            <div class="food-image">
+              <img src="48cba539ac4ad4f0f4c75683eb27358f.jpg" alt="ساندوتش شيش" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش شيش" data-price="60" aria-label="أضف ساندوتش شيش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش شيش</h3><p>شيش فراخ مشوي</p></div>
+              <strong class="price">60 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="syrian" data-name="ساندوتش بطاطس">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (4).jpg" alt="ساندوتش بطاطس" loading="lazy" />
+              <button class="quick-add" data-add="ساندوتش بطاطس" data-price="50" aria-label="أضف ساندوتش بطاطس للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>ساندوتش بطاطس</h3><p>بطاطس ساخنة في ساندوتش</p></div>
+              <strong class="price">50 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <!-- ===== الإضافات والصوصات ===== -->
+          <article class="food-card" data-category="extras" data-name="إضافة موزاريلا">
+            <div class="food-image">
+              <img src="f84da931dc01232f8e87f5e378808337.jpg" alt="إضافة موزاريلا" loading="lazy" />
+              <span class="food-tag">إضافة</span>
+              <button class="quick-add" data-add="إضافة موزاريلا" data-price="10" aria-label="أضف إضافة موزاريلا للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>إضافة موزاريلا</h3><p>إضافة جبنة موزاريلا</p></div>
+              <strong class="price">10 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="إضافة شيدر">
+            <div class="food-image">
+              <img src="f781c8c2627b87cc5b625ad453cabfb2.jpg" alt="إضافة شيدر" loading="lazy" />
+              <span class="food-tag">إضافة</span>
+              <button class="quick-add" data-add="إضافة شيدر" data-price="10" aria-label="أضف إضافة شيدر للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>إضافة شيدر</h3><p>إضافة جبنة شيدر</p></div>
+              <strong class="price">10 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="إضافة كونو كريب">
+            <div class="food-image">
+              <img src="c46150330335881e3a2e922a8185ac60.jpg" alt="إضافة كونو كريب" loading="lazy" />
+              <span class="food-tag">إضافة</span>
+              <button class="quick-add" data-add="إضافة كونو كريب" data-price="30" aria-label="أضف إضافة كونو كريب للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>إضافة كونو كريب</h3><p>إضافة كونو كريب</p></div>
+              <strong class="price">30 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="إضافة لحوم">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM.jpg" alt="إضافة لحوم" loading="lazy" />
+              <span class="food-tag">إضافة</span>
+              <button class="quick-add" data-add="إضافة لحوم" data-price="25" aria-label="أضف إضافة لحوم للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>إضافة لحوم</h3><p>إضافة لحوم للطلب</p></div>
+              <strong class="price">25 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="إضافة صوصات">
+            <div class="food-image">
+              <img src="b8c0b9862bd77cc7ee9825efbbb0b866.jpg" alt="إضافة صوصات" loading="lazy" />
+              <span class="food-tag">إضافة</span>
+              <button class="quick-add" data-add="إضافة صوصات" data-price="5" aria-label="أضف إضافة صوصات للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>إضافة صوصات</h3><p>إضافة صوص حسب الاختيار</p></div>
+              <strong class="price">5 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="رانش">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (6).jpg" alt="رانش" loading="lazy" />
+              <span class="food-tag">صوص</span>
+              <button class="quick-add" data-add="رانش" data-price="10" aria-label="أضف رانش للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>رانش</h3><p>صوص رانش</p></div>
+              <strong class="price">10 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="مايونيز">
+            <div class="food-image">
+              <img src="17f4c3e04889f9499089b9e150c904bb.jpg" alt="مايونيز" loading="lazy" />
+              <span class="food-tag">صوص</span>
+              <button class="quick-add" data-add="مايونيز" data-price="10" aria-label="أضف مايونيز للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>مايونيز</h3><p>صوص مايونيز</p></div>
+              <strong class="price">10 <small>ج.م</small></strong>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="extras" data-name="باربكيو">
+            <div class="food-image">
+              <img src="WhatsApp Image 2026-11-11 at 7.38.57 PM (5).jpg" alt="باربكيو" loading="lazy" />
+              <span class="food-tag">صوص</span>
+              <button class="quick-add" data-add="باربكيو" data-price="10" aria-label="أضف باربكيو للسلة">+</button>
+            </div>
+            <div class="food-info">
+              <div><h3>باربكيو</h3><p>صوص باربكيو</p></div>
+              <strong class="price">10 <small>ج.م</small></strong>
+            </div>
+          </article>
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+          مفيش أصناف مطابقة لبحثك. جرّب كلمة تانية.
+        </p>
+        <p class="menu-disclaimer">
+          * الأسعار حسب المنيو اللي وصلنا من المطعم، وقد تتغير حسب تحديثات
+          المطعم.
+        </p>
+      </section>
+
+      <!-- ========== حكايتنا ========== -->
+      <section class="story-section" id="about">
+        <div class="story-photo">
+          
+          <img
+            src="WhatsApp Image 2026-11-11 at 8.41.39 PM.jpg"
+            alt="أجواء ع الشواية"/>
+          <div class="story-photo-label drift" data-drift="-0.4,0,-0.5,0">
+            <span>ع الشواية</span><small>الطعم اللي يجمعنا</small>
+          </div>
+        </div>
+        <div class="story-copy">
+          <span class="section-kicker">حكايتنا في كل طبق</span>
+          <h2>الأكل الحلو مش بس طعم…<br /><em>ده إحساس باللمة.</em></h2>
+          <p>
+            في ع الشواية، بنحب الأكل اللي يتعمل على أصوله ويتقدّم من القلب.
+            هدفنا إن كل زيارة تكون لحظة حلوة، وكل وجبة تبقى جزء من ذكرى تستاهل
+            تتكرر.
+          </p>
+          <div class="story-points">
+            <span>✓ اهتمام بالجودة</span><span>✓ تنوع يناسب ذوقك</span>
+            <span>✓ ضيافة من القلب</span>
+          </div>
+          <a href="#contact" class="text-link"
+            >خلّينا نجهزلك طلبك <span>←</span></a
+          >
+        </div>
+      </section>
+
+      <!-- ========== الخدمات ========== -->
+      <section class="services-section section" id="services">
+        <div class="section-heading centered">
+          <div>
+            <span class="section-kicker">تجربة كاملة</span>
+            <h2>إحنا نهتم <em>بالباقي</em></h2>
+          </div>
+          <p>كل تفصيلة هدفها تخلي تجربتك أسهل وألذ.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">⌁</div>
+            <h3>خدمة التوصيل</h3>
+            <p>وجبتك المفضلة لحد عندك، بكل سهولة.</p>
+            <a href="#contact">اطلب واستفسر <span>←</span></a>
+          </article>
+          <article class="service-card featured">
+            <div class="service-icon">✦</div>
+            <span class="service-label">عروض مميزة</span>
+            <h3>عروض على مزاجك</h3>
+            <p>تابع عروضنا واختار اللي يناسب لَمّتك.</p>
+            <a href="#contact">اسأل عن العروض <span>←</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">♡</div>
+            <h3>اهتمام بالنظافة</h3>
+            <p>نهتم بنظافة التحضير والتقديم في كل خطوة.</p>
+            <a href="#about">اعرف أكتر <span>←</span></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== تواصل معنا ========== -->
+      <section class="cta-band" id="contact">
+        <div>
+          <span class="section-kicker">جاهز للّقمة الحلوة؟</span>
+          <h2>اللمة تحلى مع <em>ع الشواية.</em></h2>
+          <p>ساحة سيرين، شارع السحارة، أمام حسن زيدان.</p>
+          <p class="contact-phones">
+            <a href="tel:01108866150">01108866150</a> <span>•</span>
+            <a href="tel:01108866288">01108866288</a>
+          </p>
+        </div>
+        <a class="btn btn-light" href="#menu">اختار وجبتك <span>←</span></a>
+      </section>
+    </main>
+
+    <!-- ========== الفوتر ========== -->
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">عَ</span>
+        <span class="brand-copy">
+          <strong>ع الشواية</strong><small></small>اكل الملووك يستاهل  اللمه</small>
+        </span>
+      </a>
+      <p>الطعم اللي يجمعنا، واللمة اللي تستاهل.</p>
+      <div class="footer-contact">
+        <span>📍 ساحل سليم ، شارع السحارة، أمام حسن زيدان</span>
+        <span>☎ <a href="tel:01108866150">01108866150</a></span>
+        <span>☎ <a href="tel:01108866288">01108866288</a></span>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ع الشواية — جميع الحقوق محفوظة</span>
+        <a href="#top">العودة للأعلى ↑</a>
+      </div>
+    </footer>
+
+    <!-- ========== سلة الطلبات ========== -->
+    <div class="cart-overlay" id="cartOverlay" hidden></div>
+    <aside
+      class="cart-drawer"
+      id="cartDrawer"
+      aria-label="سلة الطلبات"
+      aria-hidden="true"
+    >
+      <div class="cart-head">
+        <div>
+          <span class="section-kicker">طلبك بيجهز</span>
+          <h2>سلة الطلبات</h2>
+        </div>
+        <button id="closeCart" class="close-cart" aria-label="إغلاق السلة">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          <span>🛍️</span>
+          <h3>السلة لسه فاضية</h3>
+          <p>اختار حاجة حلوة من المنيو وابدأ طلبك.</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+          تأكيد الطلب <span>←</span>
+        </button>
+        <small>سيتم تجهيز الطلب في رسالة واتساب للمراجعة قبل الإرسال.</small>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
